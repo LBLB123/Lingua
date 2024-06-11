@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C3333">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:background="@null"
+        android:minHeight="?attr/actionBarSize"
+        android:onClick="back"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="?attr/homeAsUpIndicator" />
+
+    <TextView
+        android:id="@+id/Languages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:text="Languages"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/CurrentLearningLanguage"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/PortugueseFlag1"
+        android:layout_width="38dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginBottom="38dp"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/MyNativeLangauge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/portugal_flag" />
+
+    <TextView
+        android:id="@+id/CurrentLearningLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:text="Current learning langauge:"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/Language"
+        app:layout_constraintStart_toEndOf="@+id/PortugueseFlag1" />
+
+    <TextView
+        android:id="@+id/Language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:text="Portuguese"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/MyNativeLangauge"
+        app:layout_constraintStart_toEndOf="@+id/PortugueseFlag1" />
+
+    <TextView
+        android:id="@+id/MyNativeLangauge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="3dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:scrollbarSize="8dp"
+        android:text="My native langauge:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/English1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/English1"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_corners1"
+        android:backgroundTint="#17DBCF"
+        android:elevation="1dp"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:text="@string/English"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/IWantToLearn"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/UKFlag1"
+        android:layout_width="60dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:elevation="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MyNativeLangauge"
+        app:srcCompat="@drawable/uk_flag" />
+
+    <TextView
+        android:id="@+id/IWantToLearn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="1dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:scrollbarSize="8dp"
+        android:text="I want to learn:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/English2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/English2"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="58dp"
+        android:background="@drawable/button_corners1"
+        android:backgroundTint="#17DBCF"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:text="@string/English"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/German"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#17DBCF" />
+
+    <ImageView
+        android:id="@+id/UKFlag2"
+        android:layout_width="60dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:elevation="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IWantToLearn"
+        app:srcCompat="@drawable/uk_flag" />
+
+    <Button
+        android:id="@+id/German"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="58dp"
+        android:background="@drawable/button_corners1"
+        android:backgroundTint="#17DBCF"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:text="@string/German"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/Portuguese"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#17DBCF" />
+
+    <ImageView
+        android:id="@+id/GermanFlag"
+        android:layout_width="60dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="76dp"
+        android:elevation="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UKFlag2"
+        app:srcCompat="@drawable/german_flag" />
+
+    <Button
+        android:id="@+id/Portuguese"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="89dp"
+        android:background="@drawable/button_corners1"
+        android:backgroundTint="#17DBCF"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:text="@string/Portuguese"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#17DBCF" />
+
+    <ImageView
+        android:id="@+id/PortugueseFlag"
+        android:layout_width="60dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="76dp"
+        android:elevation="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GermanFlag"
+        app:srcCompat="@drawable/portugal_flag" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
