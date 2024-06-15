@@ -4,7 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#2C3333">
+    android:background="#2C3333"
+    android:onClick="settings">
+
+    <ImageView
+        android:id="@+id/Settings"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/settings" />
 
     <TextView
         android:id="@+id/Lingua"
@@ -21,16 +33,16 @@
 
     <TextView
         android:id="@+id/Motto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="140dp"
-        android:layout_marginBottom="204dp"
+        android:layout_width="281dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="169dp"
         android:fontFamily="@font/space_grotesk_bold"
-        android:text="Motto..."
+        android:text="Simple app for verifying your language knowledge in\n3 different langauges!"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/Continue"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/Continue"

@@ -16,10 +16,10 @@ class Settings : AppCompatActivity() {
         langaugeChoice();
     }
 
-    private val class1 = Language1()
+    private val class1 = AppLanguage()
 
     fun langaugeChoice(){
-        when(class1.lang){
+        when(class1.appLang){
             'E' -> englishText()
             'G' -> germanText()
             'P' -> portugueseText()
@@ -72,17 +72,17 @@ class Settings : AppCompatActivity() {
     }
 
     fun back(view: View?){
-        val intent = Intent(this, MainScreen::class.java)
+        val intent = Intent(this, StartPage::class.java)
         startActivity(intent)
     }
 
     fun LanguageSelection(view: View?){
-        val intent = Intent(this, Language2::class.java)
+        val intent = Intent(this, AppLanguage::class.java)
         startActivity(intent)
     }
 
     fun LanguageLevelSelection(view: View?){
-        val intent = Intent(this, LanguageLevel2::class.java)
+        val intent = Intent(this, LanguageLevel::class.java)
         startActivity(intent)
     }
 

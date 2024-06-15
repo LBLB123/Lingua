@@ -6,15 +6,30 @@ import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
-class LanguageLevel2 : AppCompatActivity() {
+class AppLanguage : AppCompatActivity() {
+
+    var appLang : Char = 'E'
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.language_level2)
+        setContentView(R.layout.app_langauge)
+    }
+
+    fun englishLanguage(view: View?){
+        appLang = 'E'
+    }
+
+    fun germanLanguage(view: View?){
+        appLang = 'G'
+    }
+
+    fun portugueseLanguage(view: View?){
+        appLang = 'P'
     }
 
     fun continueButton(view: View?){
-        val intent = Intent(this, Settings::class.java)
+        val intent = Intent(this, LearningLanguage::class.java)
         startActivity(intent)
     }
 

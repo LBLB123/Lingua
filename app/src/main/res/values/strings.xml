@@ -4,4 +4,13 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="lesson_fragment">Lesson Fragment</string>
+    <string name="English">English</string>
+    <string name="German">German</string>
+    <string name="Portuguese">Portuguese</string>
+    <string name="Continue">Continue</string>
+    <string name="ReadingLesson">Reading Lesson</string>
+    <string name="GrammarLesson">Grammar Lesson</string>
+    <string name="Words">Match the right words</string>
+    <string name="Retry">Retry</string>
+    <string name="Exit">Exit</string>
 </resources>

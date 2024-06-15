@@ -4,7 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
-import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
@@ -16,10 +15,10 @@ class StartPage : AppCompatActivity() {
         langaugeChoice();
     }
 
-    private val class1 = Language1()
+    private val class1 = AppLanguage()
 
     fun langaugeChoice(){
-        when(class1.lang){
+        when(class1.appLang){
             'E' -> englishText()
             'G' -> germanText()
             'P' -> portugueseText()
@@ -39,6 +38,11 @@ class StartPage : AppCompatActivity() {
     fun portugueseText(){
         val button = findViewById<View>(R.id.Continue) as Button
         button.text = ""
+    }
+
+    fun settings(view: View?){
+        val intent = Intent(this, Settings::class.java)
+        startActivity(intent)
     }
 
     fun continueButton(view: View?){

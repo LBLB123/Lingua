@@ -8,18 +8,18 @@ import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
-class LanguageLevel1 : AppCompatActivity() {
+class LanguageLevel : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.language_level)
-        langaugeChoice();
+        languageChoice();
     }
 
-    private val class1 = Language1()
+    private val class1 = AppLanguage()
 
-    fun langaugeChoice(){
-          when(class1.lang){
+    fun languageChoice(){
+          when(class1.appLang){
               'E' -> englishText()
               'G' -> germanText()
               'P' -> portugueseText()
