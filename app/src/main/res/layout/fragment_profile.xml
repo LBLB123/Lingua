@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/DarkGreen"
+    tools:context="com.example.lingua.ui.dashboard.ProfileFragment">
+
+    <TextView
+        android:id="@+id/study_plan_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart ="20dp"
+        style="@style/TextStyle.BodyLarge"
+        android:text="@string/study_plan"
+        android:textColor="@color/white"
+        android:textSize="24sp"/>
+
+    <LinearLayout
+        android:id="@+id/days_of_week_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="7">
+        <!-- Days of the Week will be added programmatically -->
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/today_image"
+        android:layout_width="360dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/today_s_exercise"
+        android:src="@drawable/today" />
+
+    <TextView
+        android:id="@+id/progress_text"
+        style="@style/TextStyle.BodyLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/progress"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/progress_container"
+        android:layout_width="360dp"
+        android:layout_height="240dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_corners"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exercises_completed"
+            style="@style/TextStyle.BodyLarge"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:id="@+id/progress_days_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="190dp"
+            android:orientation="horizontal"
+            android:weightSum="7">
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
