@@ -29,9 +29,9 @@ class HomeFragment : Fragment() {
 
 
         val itemList = listOf(
-            Item("hey", "Item #2"),
-            Item("Title #3", "Item #3"),
-            Item("Title #4", "Item #4"),
+            Item("hey", "Lektion 2"),
+            Item("Title #3", "Lektion 3"),
+            Item("Title #4", "Lektion 4"),
 
         )
 
