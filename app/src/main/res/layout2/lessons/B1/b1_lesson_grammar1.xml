@@ -13,7 +13,7 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="58dp"
         android:fontFamily="@font/space_grotesk_bold"
-        android:text="Grammar Lesson"
+        android:text="@string/GrammarLesson"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
