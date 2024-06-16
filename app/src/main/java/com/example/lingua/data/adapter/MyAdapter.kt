@@ -1,18 +1,19 @@
 package com.example.lingua.data.adapter
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
+import android.widget.Button
 import androidx.recyclerview.widget.RecyclerView
 import com.example.lingua.R
 import com.example.lingua.data.model.Item
+import com.example.lingua.ui.empty.EmptyActivity
 
 class MyAdapter(private val itemList: List<Item>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
 
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val titleView: TextView = itemView.findViewById(R.id.titleView)
-        val textView: TextView = itemView.findViewById(R.id.textView)
+        val itemButton: Button = itemView.findViewById(R.id.itemButton)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -22,16 +23,13 @@ class MyAdapter(private val itemList: List<Item>) : RecyclerView.Adapter<MyAdapt
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val item = itemList[position]
-        holder.titleView.text = item.title
-        holder.textView.text = item.text
-
-        //square size
-        val layoutParams = holder.itemView.layoutParams
-        layoutParams.width = 600
-        layoutParams.height = 400
-        holder.itemView.layoutParams = layoutParams
+        holder.itemButton.text = item.title
+        holder.itemButton.setOnClickListener {
+            val context = holder.itemView.context
+            val intent = Intent(context, EmptyActivity::class.java)
+            context.startActivity(intent)
+        }
     }
 
     override fun getItemCount() = itemList.size
 }
-

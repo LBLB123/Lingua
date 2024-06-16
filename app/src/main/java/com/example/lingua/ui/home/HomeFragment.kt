@@ -27,14 +27,11 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
         val itemList = listOf(
-            Item("hey", "Lektion 2"),
-            Item("Title #3", "Lektion 3"),
-            Item("Title #4", "Lektion 4"),
-
+            Item("Title #1", "Description 1"),
+            Item("Title #2", "Description 2"),
+            Item("Title #3", "Description 3")
         )
-
 
         binding.recyclerView.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
         binding.recyclerView.adapter = MyAdapter(itemList)
