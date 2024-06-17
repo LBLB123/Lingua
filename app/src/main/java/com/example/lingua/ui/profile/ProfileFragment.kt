@@ -1,4 +1,4 @@
-package com.example.lingua.ui.dashboard
+package com.example.lingua.ui.profile
 
 import android.graphics.Typeface
 import android.os.Bundle

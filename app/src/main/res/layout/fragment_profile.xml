@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/DarkGreen"
-    tools:context="com.example.lingua.ui.dashboard.ProfileFragment">
+    tools:context="com.example.lingua.ui.profile.ProfileFragment">
 
     <TextView
         android:id="@+id/study_plan_text"
@@ -25,7 +25,6 @@
         android:layout_marginTop="20dp"
         android:orientation="horizontal"
         android:weightSum="7">
-        <!-- Days of the Week will be added programmatically -->
     </LinearLayout>
 
     <ImageView
