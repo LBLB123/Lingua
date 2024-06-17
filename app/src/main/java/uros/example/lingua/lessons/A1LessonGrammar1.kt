@@ -71,13 +71,13 @@ class A1LessonGrammar1 : AppCompatActivity() {
         val button2 = findViewById<View>(R.id.Button2) as Button
         val button3 = findViewById<View>(R.id.Button3) as Button
         val button4 = findViewById<View>(R.id.Button4) as Button
-        textChange1.text = "";
-        textChange2.text = "";
-        textChange3.text = "";
-        button1.text = ""
-        button2.text = ""
-        button3.text = ""
-        button4.text = ""
+        textChange1.text = "Lição de Leitura";
+        textChange2.text = "Eu acordo às 8h todos os dias.";
+        textChange3.text = "Como você escreveria esta frase\\no passado simples?";
+        button1.text = "Eu acordarei às 8h todos os dias."
+        button2.text = "Eu estava acordando às 8h todos os dias."
+        button3.text = "Eu acordei às 8h todos os dias."
+        button4.text = "Eu estava acordando às 8h todos os dias."
     }
 
 }

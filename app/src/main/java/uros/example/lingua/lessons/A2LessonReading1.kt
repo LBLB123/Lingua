@@ -65,12 +65,12 @@ class A2LessonReading1 : AppCompatActivity() {
         val button2 = findViewById<View>(R.id.Button2) as Button
         val button3 = findViewById<View>(R.id.Button3) as Button
         val button4 = findViewById<View>(R.id.Button4) as Button
-        textChange1.text = "";
-        textChange2.text = "";
-        button1.text = ""
-        button2.text = ""
-        button3.text = ""
-        button4.text = ""
+        textChange1.text = "Lição de Leitura";
+        textChange2.text = "Como você pediria educadamente uma garrafa de água em uma loja?";
+        button1.text = "Posso pegar esse pacote de batatas?"
+        button2.text = "Posso pegar essa garrafa de água, por favor?"
+        button3.text = "Posso pegar uma garrafa de água?"
+        button4.text = "Onde você deixa suas garrafas de água?"
     }
 
 }

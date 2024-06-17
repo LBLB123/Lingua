@@ -70,13 +70,14 @@ class B2LessonGrammar1 : AppCompatActivity() {
         val button2 = findViewById<View>(R.id.Button2) as Button
         val button3 = findViewById<View>(R.id.Button3) as Button
         val button4 = findViewById<View>(R.id.Button4) as Button
-        textChange1.text = "";
-        textChange2.text = "";
-        textChange3.text = "";
-        button1.text = ""
-        button2.text = ""
-        button3.text = ""
-        button4.text = ""
+        textChange1.text = "@string/LicaoDeGramatica";
+        textChange2.text = "Você trabalhou ontem.";
+        textChange3.text = "Como você escreveria esta frase\\nno tempo presente perfeito contínuo?";
+        button1.text = "Você trabalha ontem."
+        button2.text = "Você está trabalhando ontem."
+        button3.text = "Você tem estado trabalhando ontem."
+        button4.text = "Você estará trabalhando ontem."
+
     }
 
 }

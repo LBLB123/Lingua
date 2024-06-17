@@ -63,12 +63,13 @@ class LanguageLevel : AppCompatActivity() {
         val button3 = findViewById<View>(R.id.B1) as Button
         val button4 = findViewById<View>(R.id.B2) as Button
         val button5 = findViewById<View>(R.id.Continue) as Button
-        textChange.text = ""
-        button1.text = ""
-        button2.text = ""
-        button3.text = ""
-        button4.text = ""
-        button5.text = ""
+        textChange.text = "Qual é o seu nível de proficiência?"
+        button1.text = "A1 Iniciante"
+        button2.text = "A2 Básico"
+        button3.text = "B1 Intermediário"
+        button4.text = "B2 Avançado"
+        button5.text = "Continuar"
+
     }
 
     fun continueButton(view: View?){

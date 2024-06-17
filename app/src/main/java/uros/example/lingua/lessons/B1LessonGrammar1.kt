@@ -70,13 +70,14 @@ class B1LessonGrammar1 : AppCompatActivity() {
         val button2 = findViewById<View>(R.id.Button2) as Button
         val button3 = findViewById<View>(R.id.Button3) as Button
         val button4 = findViewById<View>(R.id.Button4) as Button
-        textChange1.text = "";
-        textChange2.text = "";
-        textChange3.text = "";
-        button1.text = ""
-        button2.text = ""
-        button3.text = ""
-        button4.text = ""
+        textChange1.text = "@string/LicaoDeGramatica";
+        textChange2.text = "Eu estou com dor de cabeça";
+        textChange3.text = "Como você escreveria esta frase\\no passado contínuo?";
+        button1.text = "Eu estava com dor de cabeça"
+        button2.text = "Eu estava tendo dor de cabeça."
+        button3.text = "Eu estou com dor de cabeça."
+        button4.text = "Eu tive dor de cabeça."
+
     }
 
 }

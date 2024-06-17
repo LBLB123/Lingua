@@ -63,12 +63,13 @@ class Settings : AppCompatActivity() {
         val button3 = findViewById<View>(R.id.LanguageLevel) as Button
         val button4 = findViewById<View>(R.id.Help) as Button
         val button5 = findViewById<View>(R.id.Logout) as Button
-        textChange.text = ""
-        button1.text = ""
-        button2.text = ""
-        button3.text = ""
-        button4.text = ""
-        button5.text = ""
+        textChange.text = "Configurações"
+        button1.text = "Acessibilidade"
+        button2.text = "Idioma"
+        button3.text = "Nível de proficiência"
+        button4.text = "Ajuda"
+        button5.text = "Sair"
+
     }
 
     fun back(view: View?){

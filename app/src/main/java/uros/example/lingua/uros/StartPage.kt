@@ -37,7 +37,7 @@ class StartPage : AppCompatActivity() {
 
     fun portugueseText(){
         val button = findViewById<View>(R.id.Continue) as Button
-        button.text = ""
+        button.text = "Continuar"
     }
 
     fun settings(view: View?){
