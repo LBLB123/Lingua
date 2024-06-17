@@ -8,6 +8,8 @@ import android.widget.Button
 import androidx.recyclerview.widget.RecyclerView
 import com.example.lingua.R
 import com.example.lingua.data.model.Lesson
+import com.example.lingua.ui.lessons.Lesson1Activity
+import com.example.lingua.ui.lessons.Lesson2Activity
 import com.example.lingua.ui.empty.EmptyActivity
 
 class MyAdapter(private val lessonList: List<Lesson>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
@@ -26,7 +28,12 @@ class MyAdapter(private val lessonList: List<Lesson>) : RecyclerView.Adapter<MyA
         holder.itemButton.text = item.title
         holder.itemButton.setOnClickListener {
             val context = holder.itemView.context
-            val intent = Intent(context, EmptyActivity::class.java)
+            val intent = when (position) {
+                0 -> Intent(context, Lesson1Activity::class.java)
+                1 -> Intent(context, Lesson2Activity::class.java)
+                // Add more cases as needed for additional lessons
+                else -> Intent(context, EmptyActivity::class.java)
+            }
             context.startActivity(intent)
         }
     }

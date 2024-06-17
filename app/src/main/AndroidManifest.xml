@@ -23,6 +23,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.empty.EmptyActivity" />
+        <activity android:name=".ui.lessons.Lesson1Activity" />
+        <activity android:name=".ui.lessons.Lesson2Activity" />
     </application>
 
 </manifest>

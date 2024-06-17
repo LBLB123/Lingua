@@ -30,6 +30,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
+        android:textColor="@android:color/white"
         android:layout_width="380dp"
         android:layout_height="501dp"
         android:layout_below="@id/titleCard"
