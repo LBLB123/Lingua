@@ -7,10 +7,10 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.recyclerview.widget.RecyclerView
 import com.example.lingua.R
-import com.example.lingua.data.model.Item
+import com.example.lingua.data.model.Lesson
 import com.example.lingua.ui.empty.EmptyActivity
 
-class MyAdapter(private val itemList: List<Item>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
+class MyAdapter(private val lessonList: List<Lesson>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
 
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val itemButton: Button = itemView.findViewById(R.id.itemButton)
@@ -22,7 +22,7 @@ class MyAdapter(private val itemList: List<Item>) : RecyclerView.Adapter<MyAdapt
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        val item = itemList[position]
+        val item = lessonList[position]
         holder.itemButton.text = item.title
         holder.itemButton.setOnClickListener {
             val context = holder.itemView.context
@@ -31,5 +31,5 @@ class MyAdapter(private val itemList: List<Item>) : RecyclerView.Adapter<MyAdapt
         }
     }
 
-    override fun getItemCount() = itemList.size
+    override fun getItemCount() = lessonList.size
 }

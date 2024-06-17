@@ -6,9 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.lingua.R
 import com.example.lingua.data.adapter.MyAdapter
-import com.example.lingua.data.model.Item
+import com.example.lingua.data.model.Lesson
 import com.example.lingua.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -27,14 +26,14 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val itemList = listOf(
-            Item("Title #1", "Description 1"),
-            Item("Title #2", "Description 2"),
-            Item("Title #3", "Description 3")
+        val lessonLists = listOf(
+            Lesson("Title #1", "Description 1"),
+            Lesson("Title #2", "Description 2"),
+            Lesson("Title #3", "Description 3")
         )
 
         binding.recyclerView.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
-        binding.recyclerView.adapter = MyAdapter(itemList)
+        binding.recyclerView.adapter = MyAdapter(lessonLists)
     }
 
     override fun onDestroyView() {
