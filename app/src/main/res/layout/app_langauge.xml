@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C3333">
+
+    <Button
+        android:id="@+id/Continue"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/button_corners2"
+        android:backgroundTint="#3B8681"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:onClick="continueButton"
+        android:text="@string/Continue"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:rippleColor="#17DBCF" />
+
+    <TextView
+        android:id="@+id/Languages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:text="App Languages"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/English2"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_corners1"
+        android:backgroundTint="#17DBCF"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:onClick="englishLanguage"
+        android:text="@string/English"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IWantToLearn"
+        app:rippleColor="#17DBCF" />
+
+    <TextView
+        android:id="@+id/IWantToLearn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:scrollbarSize="8dp"
+        android:text="Choose app langauge:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Languages" />
+
+    <Button
+        android:id="@+id/German"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/button_corners1"
+        android:backgroundTint="#17DBCF"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:onClick="germanLanguage"
+        android:text="@string/German"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/English2"
+        app:rippleColor="#17DBCF" />
+
+    <ImageView
+        android:id="@+id/GermanFlag"
+        android:layout_width="60dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="4dp"
+        android:elevation="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/German"
+        app:srcCompat="@drawable/german_flag" />
+
+    <Button
+        android:id="@+id/Portuguese"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/button_corners1"
+        android:backgroundTint="#17DBCF"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:onClick="portugueseLanguage"
+        android:text="@string/Portuguese"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/German"
+        app:rippleColor="#17DBCF" />
+
+    <ImageView
+        android:id="@+id/UKFlag2"
+        android:layout_width="60dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:elevation="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/English2"
+        app:srcCompat="@drawable/uk_flag" />
+
+    <ImageView
+        android:id="@+id/PortugueseFlag"
+        android:layout_width="60dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:elevation="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Portuguese"
+        app:srcCompat="@drawable/portugal_flag" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

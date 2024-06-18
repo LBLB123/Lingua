@@ -9,4 +9,14 @@
     <string name="study_plan">Study Plan</string>
     <string name="today_s_exercise">Today\'s exercise</string>
     <string name="profile">Profile</string>
+    <string name="English">English</string>
+    <string name="German">German</string>
+    <string name="Portuguese">Portuguese</string>
+    <string name="Continue">Continue</string>
+    <string name="ReadingLesson">Reading Lesson</string>
+    <string name="GrammarLesson">Grammar Lesson</string>
+    <string name="Words">Match the right words</string>
+    <string name="Retry">Retry</string>
+    <string name="Exit">Exit</string>
+    <string name="i_wake_up_at_8am_every_day">I wake up at 8am every day.</string>
 </resources>

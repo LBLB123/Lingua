@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C3333">
+
+    <TextView
+        android:id="@+id/GrammarLesson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:text="@string/GrammarLesson"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Sentence1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="38dp"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:text="@string/i_wake_up_at_8am_every_day"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GrammarLesson" />
+
+    <TextView
+        android:id="@+id/Sentence2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:text="How would you write this sentence in\nsimple past tense?"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sentence1" />
+
+    <Button
+        android:id="@+id/Button1"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/button_corners1"
+        android:backgroundTint="#17DBCF"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:onClick="wrongAnswer"
+        android:text="I will wake up at 8am every day."
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sentence2"
+        app:rippleColor="#17DBCF" />
+
+    <Button
+        android:id="@+id/Button2"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/button_corners1"
+        android:backgroundTint="#17DBCF"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:onClick="wrongAnswer"
+        android:text="I had been waking up at 8am every  day."
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Button1"
+        app:rippleColor="#17DBCF" />
+
+    <Button
+        android:id="@+id/Button3"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/button_corners1"
+        android:backgroundTint="#17DBCF"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:onClick="correctAnswer"
+        android:text="I woke up at 8am every day."
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Button2"
+        app:rippleColor="#17DBCF" />
+
+    <Button
+        android:id="@+id/Button4"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/button_corners1"
+        android:backgroundTint="#17DBCF"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:onClick="wrongAnswer"
+        android:text="I was waking up at 8am every day."
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Button3"
+        app:rippleColor="#17DBCF" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

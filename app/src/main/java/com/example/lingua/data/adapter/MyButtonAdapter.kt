@@ -11,8 +11,10 @@ import com.example.lingua.data.model.Lesson
 import com.example.lingua.ui.lessons.Lesson1Activity
 import com.example.lingua.ui.lessons.Lesson2Activity
 import com.example.lingua.ui.empty.EmptyActivity
+import com.example.lingua.ui.lessons.A1LessonGrammar1
 
-class MyAdapter(private val lessonList: List<Lesson>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
+
+class MyButtonAdapter(private val lessonList: List<Lesson>) : RecyclerView.Adapter<MyButtonAdapter.MyViewHolder>() {
 
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val itemButton: Button = itemView.findViewById(R.id.itemButton)
@@ -31,6 +33,7 @@ class MyAdapter(private val lessonList: List<Lesson>) : RecyclerView.Adapter<MyA
             val intent = when (position) {
                 0 -> Intent(context, Lesson1Activity::class.java)
                 1 -> Intent(context, Lesson2Activity::class.java)
+                2 -> Intent(context, A1LessonGrammar1::class.java)
                 // Add more cases as needed for additional lessons
                 else -> Intent(context, EmptyActivity::class.java)
             }

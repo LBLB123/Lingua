@@ -25,6 +25,49 @@
         <activity android:name=".ui.empty.EmptyActivity" />
         <activity android:name=".ui.lessons.Lesson1Activity" />
         <activity android:name=".ui.lessons.Lesson2Activity" />
+        <activity android:name=".ui.lessons.A1LessonGrammar1" />
+        <activity
+            android:name=".AnswerControl">
+        </activity>
+        <activity
+            android:name=".CorrectAnswer">
+        </activity>
+        <activity
+            android:name=".WrongAnswer">
+        </activity>
+        <activity
+            android:name=".LanguageLevel">
+        </activity>
+        <activity
+            android:name=".AppLanguage">
+        </activity>
+        <activity
+            android:name=".Settings">
+        </activity>
+        <activity
+            android:name=".StartPage">
+        </activity>
+        <activity
+            android:name=".A1LessonReading1">
+        </activity>
+        <activity
+            android:name=".A2LessonGrammar1">
+        </activity>
+        <activity
+            android:name=".A2LessonReading1">
+        </activity>
+        <activity
+            android:name=".B1LessonGrammar1">
+        </activity>
+        <activity
+            android:name=".B1LessonReading1">
+        </activity>
+        <activity
+            android:name=".B2LessonGrammar1">
+        </activity>
+        <activity
+            android:name=".B2LessonReading1">
+        </activity>
     </application>
 
 </manifest>

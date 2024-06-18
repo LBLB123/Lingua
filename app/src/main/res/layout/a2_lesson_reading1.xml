@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C3333">
+
+    <TextView
+        android:id="@+id/ReadingLesson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:text="Reading Lesson"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Sentence"
+        android:layout_width="255dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginBottom="45dp"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:text="How would you politely ask for a bottle of water in a store?"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/Button1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Button1"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="66dp"
+        android:background="@drawable/button_corners1"
+        android:backgroundTint="#17DBCF"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:onClick="wrongAnswer"
+        android:text="Can I get this chips?"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/Button2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#17DBCF" />
+
+    <Button
+        android:id="@+id/Button2"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="71dp"
+        android:background="@drawable/button_corners1"
+        android:backgroundTint="#17DBCF"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:onClick="correctAnswer"
+        android:text="Can I get this bottle of water please?"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/Button3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#17DBCF" />
+
+    <Button
+        android:id="@+id/Button3"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="72dp"
+        android:background="@drawable/button_corners1"
+        android:backgroundTint="#17DBCF"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:onClick="wrongAnswer"
+        android:text="Can I get a bottle of water?"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/Button4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#17DBCF" />
+
+    <Button
+        android:id="@+id/Button4"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/button_corners1"
+        android:backgroundTint="#17DBCF"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:onClick="wrongAnswer"
+        android:text="Where do you leave your water bottles?"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#17DBCF" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

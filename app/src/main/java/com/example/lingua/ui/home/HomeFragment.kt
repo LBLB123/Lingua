@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.lingua.data.adapter.MyAdapter
+import com.example.lingua.data.adapter.MyButtonAdapter
 import com.example.lingua.data.model.Lesson
 import com.example.lingua.databinding.FragmentHomeBinding
 
@@ -33,7 +33,7 @@ class HomeFragment : Fragment() {
         )
 
         binding.recyclerView.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
-        binding.recyclerView.adapter = MyAdapter(lessonLists)
+        binding.recyclerView.adapter = MyButtonAdapter(lessonLists)
     }
 
     override fun onDestroyView() {

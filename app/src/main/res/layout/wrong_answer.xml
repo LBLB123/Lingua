@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C3333">
+
+    <TextView
+        android:id="@+id/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:text="You answer is incorrect!"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Retry"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="192dp"
+        android:background="@drawable/button_corners2"
+        android:backgroundTint="#3B8681"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:onClick="retry"
+        android:text="@string/Retry"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:rippleColor="#17DBCF" />
+
+    <Button
+        android:id="@+id/Exit"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="68dp"
+        android:background="@drawable/button_corners2"
+        android:backgroundTint="#3B8681"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:onClick="exit"
+        android:text="@string/Exit"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:rippleColor="#17DBCF" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
