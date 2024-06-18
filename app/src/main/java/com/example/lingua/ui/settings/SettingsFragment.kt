@@ -71,12 +71,12 @@ class SettingsFragment : Fragment() {
         val button3 = view.findViewById<Button>(R.id.LanguageLevel)
         val button4 = view.findViewById<Button>(R.id.Help)
         val button5 = view.findViewById<Button>(R.id.Logout)
-        textChange.text = ""
-        button1.text = ""
-        button2.text = ""
-        button3.text = ""
-        button4.text = ""
-        button5.text = ""
+        textChange.text = "Configurações"
+        button1.text = "Acessibilidade"
+        button2.text = "Idioma"
+        button3.text = "Nível de Idioma"
+        button4.text = "Ajuda"
+        button5.text = "Sair"
     }
 
     fun back(view: View){
