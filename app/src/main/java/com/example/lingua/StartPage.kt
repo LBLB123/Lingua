@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import com.example.lingua.ui.settings.SettingsFragment
 
 class StartPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,7 +42,7 @@ class StartPage : AppCompatActivity() {
     }
 
     fun settings(view: View?){
-        val intent = Intent(this, Settings::class.java)
+        val intent = Intent(this, SettingsFragment::class.java)
         startActivity(intent)
     }
 

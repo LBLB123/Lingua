@@ -37,7 +37,7 @@
             android:name=".AppLanguage">
         </activity>
         <activity
-            android:name=".Settings">
+            android:name=".ui.settings.Settings">
         </activity>
         <activity
             android:name=".StartPage">
