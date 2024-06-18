@@ -33,47 +33,11 @@
         app:layout_constraintTop_toBottomOf="@+id/GrammarLesson" />
 
     <Button
-        android:id="@+id/Button1"
-        android:layout_width="310dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginBottom="43dp"
-        android:background="@drawable/button_corners1"
-        android:backgroundTint="#17DBCF"
-        android:fontFamily="@font/space_grotesk_bold"
-        android:onClick="wrongAnswer"
-        android:text="Important"
-        android:textAllCaps="false"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/Button2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:rippleColor="#17DBCF" />
-
-    <Button
-        android:id="@+id/Button2"
-        android:layout_width="310dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginBottom="240dp"
-        android:background="@drawable/button_corners1"
-        android:backgroundTint="#17DBCF"
-        android:fontFamily="@font/space_grotesk_bold"
-        android:onClick="wrongAnswer"
-        android:text="Importantest"
-        android:textAllCaps="false"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:rippleColor="#17DBCF" />
-
-    <Button
         android:id="@+id/Button3"
         android:layout_width="310dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginBottom="145dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="156dp"
         android:background="@drawable/button_corners1"
         android:backgroundTint="#17DBCF"
         android:fontFamily="@font/space_grotesk_bold"
@@ -87,11 +51,47 @@
         app:rippleColor="#17DBCF" />
 
     <Button
+        android:id="@+id/Button2"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="244dp"
+        android:background="@drawable/button_corners1"
+        android:backgroundTint="#17DBCF"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:onClick="wrongAnswer"
+        android:text="Importantest"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:rippleColor="#17DBCF" />
+
+    <Button
+        android:id="@+id/Button1"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/button_corners1"
+        android:backgroundTint="#17DBCF"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:onClick="wrongAnswer"
+        android:text="Important"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/Button2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#17DBCF" />
+
+    <Button
         android:id="@+id/Button4"
         android:layout_width="310dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="80dp"
         android:background="@drawable/button_corners1"
         android:backgroundTint="#17DBCF"
         android:fontFamily="@font/space_grotesk_bold"

@@ -12,6 +12,7 @@ import com.example.lingua.ui.lessons.Lesson1Activity
 import com.example.lingua.ui.lessons.Lesson2Activity
 import com.example.lingua.ui.empty.EmptyActivity
 import com.example.lingua.ui.lessons.A1LessonGrammar1
+import com.example.lingua.ui.lessons.A1LessonReading1
 
 
 class MyButtonAdapter(private val lessonList: List<Lesson>) : RecyclerView.Adapter<MyButtonAdapter.MyViewHolder>() {
@@ -34,6 +35,7 @@ class MyButtonAdapter(private val lessonList: List<Lesson>) : RecyclerView.Adapt
                 0 -> Intent(context, Lesson1Activity::class.java)
                 1 -> Intent(context, Lesson2Activity::class.java)
                 2 -> Intent(context, A1LessonGrammar1::class.java)
+                3 -> Intent(context, A1LessonReading1::class.java)
                 // Add more cases as needed for additional lessons
                 else -> Intent(context, EmptyActivity::class.java)
             }

@@ -37,9 +37,6 @@
             android:name=".AppLanguage">
         </activity>
         <activity
-            android:name=".ui.settings.Settings">
-        </activity>
-        <activity
             android:name=".StartPage">
         </activity>
         <activity
@@ -49,6 +46,7 @@
         <activity android:name=".ui.lessons.Lesson1Activity" />
         <activity android:name=".ui.lessons.Lesson2Activity" />
         <activity android:name=".ui.lessons.A1LessonGrammar1" />
+        <activity android:name=".ui.lessons.A1LessonReading1" />
         <activity
             android:name=".A1LessonReading1">
         </activity>

@@ -29,7 +29,8 @@ class HomeFragment : Fragment() {
         val lessonLists = listOf(
             Lesson("Title #1", "Description 1"),
             Lesson("Title #2", "Description 2"),
-            Lesson("Title #3", "Description 3")
+            Lesson("Title #3", "Description 3"),
+            Lesson("Title #34", "Description 34")
         )
 
         binding.recyclerView.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
