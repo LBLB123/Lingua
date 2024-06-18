@@ -8,12 +8,16 @@ import androidx.appcompat.app.AppCompatActivity
 
 class AppLanguage : AppCompatActivity() {
 
-    var appLang : Char = 'G'
+    private var appLang : Char = 'E'
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.app_langauge)
+    }
+
+    fun getAppLang(): Char{
+        return appLang
     }
 
     fun englishLanguage(view: View?){

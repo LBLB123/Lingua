@@ -19,7 +19,7 @@ class LanguageLevel : AppCompatActivity() {
     private val class1 = AppLanguage()
 
     fun languageChoice(){
-          when(class1.appLang){
+          when(class1.getAppLang()){
               'E' -> englishText()
               'G' -> germanText()
               'P' -> portugueseText()
@@ -63,11 +63,11 @@ class LanguageLevel : AppCompatActivity() {
         val button3 = findViewById<View>(R.id.B1) as Button
         val button4 = findViewById<View>(R.id.B2) as Button
         val button5 = findViewById<View>(R.id.Continue) as Button
-        textChange.text = "Qual é o seu nível de idioma?";
-        button1.text = "Nível A1 - Iniciante"
-        button2.text = "Nível A2 - Elementar"
-        button3.text = "Nível B1 - Intermediário"
-        button4.text = "Nível B2 - Avançado"
+        textChange.text = "Qual é o seu nível de idioma?"
+        button1.text = "A1 Nível Iniciante"
+        button2.text = "A2 Nível Elementar"
+        button3.text = "B1 Nível Intermediário"
+        button4.text = "B2 Nível Avançado"
         button5.text = "Continuar"
     }
 

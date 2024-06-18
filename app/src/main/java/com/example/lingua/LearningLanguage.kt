@@ -10,7 +10,7 @@ import androidx.core.view.WindowInsetsCompat
 
 class LearningLanguage : AppCompatActivity() {
 
-    var learningLang: Char = 'G'
+    private var learningLang: Char = 'E'
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,6 +21,10 @@ class LearningLanguage : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+    }
+
+    fun getLearningLang(): Char{
+        return learningLang
     }
 
     fun englishLanguage(view: View?){

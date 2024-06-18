@@ -19,7 +19,7 @@ class StartPage : AppCompatActivity() {
     private val class1 = AppLanguage()
 
     fun langaugeChoice(){
-        when(class1.appLang){
+        when(class1.getAppLang()){
             'E' -> englishText()
             'G' -> germanText()
             'P' -> portugueseText()
@@ -39,7 +39,6 @@ class StartPage : AppCompatActivity() {
     fun portugueseText(){
         val button = findViewById<View>(R.id.Continue) as Button
         button.text = "Continuar"
-
     }
 
     fun settings(view: View?){
@@ -51,5 +50,5 @@ class StartPage : AppCompatActivity() {
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
     }
-    
+
 }

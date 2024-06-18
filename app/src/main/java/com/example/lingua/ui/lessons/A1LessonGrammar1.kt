@@ -1,31 +1,34 @@
 package com.example.lingua.ui.lessons
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import com.example.lingua.AnswerControl
+import com.example.lingua.CorrectAnswer
 import com.example.lingua.LearningLanguage
 import com.example.lingua.R
+import com.example.lingua.WrongAnswer
 
 class A1LessonGrammar1 : AppCompatActivity() {
 
     private val class1 = LearningLanguage()
-    private val class2 = AnswerControl()
+    private val class2 = CorrectAnswer()
+    private val class3 = WrongAnswer()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.a1_lesson_grammar1)
-        class2.retry = "a1_lesson_grammar1"
+        class2.retry = 1
+        class3.retry = 1
         languageChoice();
     }
 
-
     fun languageChoice(){
-        when(class1.learningLang){
+        when(class1.getLearningLang()){
             'E' -> englishText()
             'G' -> germanText()
             'P' -> portugueseText()
@@ -84,6 +87,16 @@ class A1LessonGrammar1 : AppCompatActivity() {
         button3.text = "Eu acordei às 8h todos os dias."
         button4.text = "Eu estava acordando às 8h todos os dias."
 
+    }
+
+    fun wrongAnswer(view: View){
+        val intent = Intent(this, WrongAnswer::class.java)
+        startActivity(intent)
+    }
+
+    fun correctAnswer(view: View){
+        val intent = Intent(this, CorrectAnswer::class.java)
+        startActivity(intent)
     }
 
 }

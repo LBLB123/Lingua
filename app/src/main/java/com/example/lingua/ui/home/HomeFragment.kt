@@ -27,10 +27,21 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val lessonLists = listOf(
-            Lesson("Title #1", "Description 1"),
-            Lesson("Title #2", "Description 2"),
-            Lesson("Title #3", "Description 3"),
-            Lesson("Title #34", "Description 34")
+            Lesson("A1G1", "Description 1"),
+            Lesson("A1R1", "Description 2"),
+            Lesson("A1V1", "Description 3"),
+
+            Lesson("A2G1", "Description 1"),
+            Lesson("A2R1", "Description 2"),
+            Lesson("A2V1", "Description 3"),
+
+            Lesson("B1G1", "Description 1"),
+            Lesson("B1R1", "Description 2"),
+            Lesson("B1V1", "Description 3"),
+
+            Lesson("B2G1", "Description 1"),
+            Lesson("B2R1", "Description 2"),
+            Lesson("B2V1", "Description 3"),
         )
 
         binding.recyclerView.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)

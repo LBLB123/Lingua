@@ -27,7 +27,7 @@ class SettingsFragment : Fragment() {
     }
 
     private fun languageChoice(view: View){
-        when(class1.appLang){
+        when(class1.getAppLang()){
             'E' -> englishText(view)
             'G' -> germanText(view)
             'P' -> portugueseText(view)

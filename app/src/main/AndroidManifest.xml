@@ -45,29 +45,22 @@
         <activity android:name=".ui.empty.EmptyActivity" />
         <activity android:name=".ui.lessons.Lesson1Activity" />
         <activity android:name=".ui.lessons.Lesson2Activity" />
+
         <activity android:name=".ui.lessons.A1LessonGrammar1" />
         <activity android:name=".ui.lessons.A1LessonReading1" />
-        <activity
-            android:name=".A1LessonReading1">
-        </activity>
-        <activity
-            android:name=".A2LessonGrammar1">
-        </activity>
-        <activity
-            android:name=".A2LessonReading1">
-        </activity>
-        <activity
-            android:name=".B1LessonGrammar1">
-        </activity>
-        <activity
-            android:name=".B1LessonReading1">
-        </activity>
-        <activity
-            android:name=".B2LessonGrammar1">
-        </activity>
-        <activity
-            android:name=".B2LessonReading1">
-        </activity>
+        <activity android:name=".ui.lessons.A1LessonVocabulary1" />
+
+        <activity android:name=".ui.lessons.A2LessonGrammar1" />
+        <activity android:name=".ui.lessons.A2LessonReading1" />
+        <activity android:name=".ui.lessons.A2LessonVocabulary1" />
+
+        <activity android:name=".ui.lessons.B1LessonGrammar1" />
+        <activity android:name=".ui.lessons.B1LessonReading1" />
+        <activity android:name=".ui.lessons.B1LessonVocabulary1" />
+
+        <activity android:name=".ui.lessons.B2LessonGrammar1" />
+        <activity android:name=".ui.lessons.B2LessonReading1" />
+        <activity android:name=".ui.lessons.B2LessonVocabulary1" />
     </application>
 
 </manifest>
