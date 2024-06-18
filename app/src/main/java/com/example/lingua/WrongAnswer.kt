@@ -39,18 +39,18 @@ class WrongAnswer : AppCompatActivity() {
         val textChange = findViewById<TextView>(R.id.Text)
         val button1 = findViewById<View>(R.id.Retry) as Button
         val button2 = findViewById<View>(R.id.Exit) as Button
-        textChange.text = "Dein Antwort ist falsch!";
-        button1.text = "Wiederholen"
-        button2.text = "Verlassen"
+        textChange.text = "Deine Antwort ist falsch!";
+        button1.text = "Erneut versuchen"
+        button2.text = "Beenden"
     }
 
     fun portugueseText(){
         val textChange = findViewById<TextView>(R.id.Text)
         val button1 = findViewById<View>(R.id.Retry) as Button
         val button2 = findViewById<View>(R.id.Exit) as Button
-        textChange.text = "Your answer is wrong!";
-        button1.text = "Retry"
-        button2.text = "Exit"
+        textChange.text = "Sua resposta está errada!";
+        button1.text = "Tentar novamente"
+        button2.text = "Sair"
     }
 
 }

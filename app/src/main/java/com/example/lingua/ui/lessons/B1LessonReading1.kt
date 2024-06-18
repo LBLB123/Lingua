@@ -54,12 +54,12 @@ class B1LessonReading1 : AppCompatActivity() {
         val button2 = findViewById<View>(R.id.Button2) as Button
         val button3 = findViewById<View>(R.id.Button3) as Button
         val button4 = findViewById<View>(R.id.Button4) as Button
-        textChange1.text = "";
-        textChange2.text = "";
-        button1.text = ""
-        button2.text = ""
-        button3.text = ""
-        button4.text = ""
+        textChange1.text = "@string/Lesestunde";
+        textChange2.text = "Ein Freund fragt dich, wie deine Morgen war.";
+        button1.text = "Ich habe gut geschlafen."
+        button2.text = "Ich bin ausgeruht aufgewacht und war froh, meinen Tag zu beginnen."
+        button3.text = "Das Wetter ist wirklich schön."
+        button4.text = "Wie war dein Morgen?"
     }
 
     fun portugueseText(){
@@ -69,12 +69,12 @@ class B1LessonReading1 : AppCompatActivity() {
         val button2 = findViewById<View>(R.id.Button2) as Button
         val button3 = findViewById<View>(R.id.Button3) as Button
         val button4 = findViewById<View>(R.id.Button4) as Button
-        textChange1.text = "";
-        textChange2.text = "";
-        button1.text = ""
-        button2.text = ""
-        button3.text = ""
-        button4.text = ""
+        textChange1.text = "@string/LicaoDeLeitura";
+        textChange2.text = "Um amigo pergunta como foi sua manhã.";
+        button1.text = "Eu dormi bem."
+        button2.text = "Acordei me sentindo descansado e feliz para começar o dia."
+        button3.text = "O dia está realmente bonito."
+        button4.text = "Como foi sua manhã?"
     }
 
 }

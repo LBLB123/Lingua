@@ -79,12 +79,13 @@ class A1LessonVocabulary1 : AppCompatActivity() {
         val button4 = findViewById<View>(R.id.Button10) as Button
         val button5 = findViewById<View>(R.id.Button11) as Button
         val button6 = findViewById<View>(R.id.Button12) as Button
-        button1.text = ""
-        button2.text = ""
-        button3.text = ""
-        button4.text = ""
-        button5.text = ""
-        button6.text = ""
+        button1.text = "Quatro"
+        button2.text = "Doze"
+        button3.text = "Sete"
+        button4.text = "Zero"
+        button5.text = "Dez"
+        button6.text = "Treze"
+
     }
 
     fun appLanguageEnglish(){
@@ -112,7 +113,7 @@ class A1LessonVocabulary1 : AppCompatActivity() {
         val button4 = findViewById<View>(R.id.Button4) as Button
         val button5 = findViewById<View>(R.id.Button5) as Button
         val button6 = findViewById<View>(R.id.Button6) as Button
-        textChange1.text = "";
+        textChange1.text = "Ordne die richtigen Wörter zu";
         button1.text = "Vier"
         button2.text = "Zehn"
         button3.text = "Dreizehn"
@@ -129,13 +130,13 @@ class A1LessonVocabulary1 : AppCompatActivity() {
         val button4 = findViewById<View>(R.id.Button4) as Button
         val button5 = findViewById<View>(R.id.Button5) as Button
         val button6 = findViewById<View>(R.id.Button6) as Button
-        textChange1.text = "";
-        button1.text = ""
-        button2.text = ""
-        button3.text = ""
-        button4.text = ""
-        button5.text = ""
-        button6.text = ""
+        textChange1.text = "Combine as palavras corretas";
+        button1.text = "Quatro"
+        button2.text = "Dez"
+        button3.text = "Treze"
+        button4.text = "Doze"
+        button5.text = "Zero"
+        button6.text = "Sete"
     }
 
 }

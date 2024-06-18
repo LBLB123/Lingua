@@ -48,11 +48,11 @@ class LanguageLevel : AppCompatActivity() {
         val button3 = findViewById<View>(R.id.B1) as Button
         val button4 = findViewById<View>(R.id.B2) as Button
         val button5 = findViewById<View>(R.id.Continue) as Button
-        textChange.text = "Was ist dein Sprachniveau?"
-        button1.text = "A1 Anfängerstufe"
-        button2.text = "A2 Grundstufe"
-        button3.text = "B1 Mittelstufe"
-        button4.text = "B2 Oberstuffe"
+        textChange.text = "Wie ist dein Sprachniveau?";
+        button1.text = "A1 Anfängerniveau"
+        button2.text = "A2 Grundstufenniveau"
+        button3.text = "B1 Mittelstufenniveau"
+        button4.text = "B2 Fortgeschrittenes Niveau"
         button5.text = "Weiter"
     }
 
@@ -63,12 +63,12 @@ class LanguageLevel : AppCompatActivity() {
         val button3 = findViewById<View>(R.id.B1) as Button
         val button4 = findViewById<View>(R.id.B2) as Button
         val button5 = findViewById<View>(R.id.Continue) as Button
-        textChange.text = ""
-        button1.text = ""
-        button2.text = ""
-        button3.text = ""
-        button4.text = ""
-        button5.text = ""
+        textChange.text = "Qual é o seu nível de idioma?";
+        button1.text = "Nível A1 - Iniciante"
+        button2.text = "Nível A2 - Elementar"
+        button3.text = "Nível B1 - Intermediário"
+        button4.text = "Nível B2 - Avançado"
+        button5.text = "Continuar"
     }
 
     fun continueButton(view: View?){

@@ -54,12 +54,12 @@ class A2LessonReading1 : AppCompatActivity() {
         val button2 = findViewById<View>(R.id.Button2) as Button
         val button3 = findViewById<View>(R.id.Button3) as Button
         val button4 = findViewById<View>(R.id.Button4) as Button
-        textChange1.text = "";
-        textChange2.text = "";
-        button1.text = ""
-        button2.text = ""
-        button3.text = ""
-        button4.text = ""
+        textChange1.text = "Leselektion";
+        textChange2.text = "Wie würdest du höflich nach einer Flasche Wasser in einem Geschäft fragen?";
+        button1.text = "Kann ich diese Chips bekommen?"
+        button2.text = "Kann ich bitte diese Flasche Wasser bekommen?"
+        button3.text = "Kann ich eine Flasche Wasser bekommen?"
+        button4.text = "Wo habt ihr eure Wasserflaschen?"
     }
 
     fun portugueseText(){
@@ -69,12 +69,12 @@ class A2LessonReading1 : AppCompatActivity() {
         val button2 = findViewById<View>(R.id.Button2) as Button
         val button3 = findViewById<View>(R.id.Button3) as Button
         val button4 = findViewById<View>(R.id.Button4) as Button
-        textChange1.text = "";
-        textChange2.text = "";
-        button1.text = ""
-        button2.text = ""
-        button3.text = ""
-        button4.text = ""
+        textChange1.text = "Lição de Leitura";
+        textChange2.text = "Como você pediria educadamente uma garrafa de água em uma loja?";
+        button1.text = "Posso pegar esses salgadinhos?"
+        button2.text = "Posso pegar esta garrafa de água, por favor?"
+        button3.text = "Posso pegar uma garrafa de água?"
+        button4.text = "Onde você guarda suas garrafas de água?"
     }
 
 }

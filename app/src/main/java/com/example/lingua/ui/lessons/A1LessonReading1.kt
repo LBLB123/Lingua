@@ -57,13 +57,13 @@ class A1LessonReading1 : AppCompatActivity() {
         val button2 = findViewById<View>(R.id.Button2) as Button
         val button3 = findViewById<View>(R.id.Button3) as Button
         val button4 = findViewById<View>(R.id.Button4) as Button
-        textChange1.text = "";
-        textChange2.text = "";
-        textChange3.text = "";
-        button1.text = ""
-        button2.text = ""
-        button3.text = ""
-        button4.text = ""
+        textChange1.text = "Grammatik Lektion";
+        textChange2.text = "Wie würdest du antworten?";
+        textChange3.text = "Jemand fragt dich, wie alt du bist.";
+        button1.text = "Ich bin ..."
+        button2.text = "Mein Name ist ..."
+        button3.text = "Ich bin ... Jahre alt."
+        button4.text = "Wie alt bist du?"
     }
 
     fun portugueseText(){
@@ -74,13 +74,13 @@ class A1LessonReading1 : AppCompatActivity() {
         val button2 = findViewById<View>(R.id.Button2) as Button
         val button3 = findViewById<View>(R.id.Button3) as Button
         val button4 = findViewById<View>(R.id.Button4) as Button
-        textChange1.text = "";
-        textChange2.text = "";
-        textChange3.text = "";
-        button1.text = ""
-        button2.text = ""
-        button3.text = ""
-        button4.text = ""
+        textChange1.text = "Lição de Gramática";
+        textChange2.text = "Como você responderia?";
+        textChange3.text = "Alguém pergunta quantos anos você tem.";
+        button1.text = "Eu tenho ..."
+        button2.text = "Meu nome é ..."
+        button3.text = "Eu tenho ... anos."
+        button4.text = "Quantos anos você tem?"
     }
 
 }

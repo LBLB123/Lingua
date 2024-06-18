@@ -64,12 +64,12 @@ class B2LessonVocabulary1 : AppCompatActivity() {
         val button4 = findViewById<View>(R.id.Button10) as Button
         val button5 = findViewById<View>(R.id.Button11) as Button
         val button6 = findViewById<View>(R.id.Button12) as Button
-        button1.text = "Huhnfleisch"
+        button1.text = "Huhn"
         button2.text = "Fisch"
-        button3.text = "Hammelfleisch"
+        button3.text = "Lammfleisch"
         button4.text = "Schweinefleisch"
         button5.text = "Rindfleisch"
-        button6.text = "Lammfleisch"
+        button6.text = "Lamm"
     }
 
     fun learningLanguagePortuguese(){
@@ -79,12 +79,12 @@ class B2LessonVocabulary1 : AppCompatActivity() {
         val button4 = findViewById<View>(R.id.Button10) as Button
         val button5 = findViewById<View>(R.id.Button11) as Button
         val button6 = findViewById<View>(R.id.Button12) as Button
-        button1.text = ""
-        button2.text = ""
-        button3.text = ""
-        button4.text = ""
-        button5.text = ""
-        button6.text = ""
+        button1.text = "Frango"
+        button2.text = "Peixe"
+        button3.text = "Carneiro"
+        button4.text = "Porco"
+        button5.text = "Carne bovina"
+        button6.text = "Cordeiro"
     }
 
     fun appLanguageEnglish(){
@@ -112,13 +112,13 @@ class B2LessonVocabulary1 : AppCompatActivity() {
         val button4 = findViewById<View>(R.id.Button4) as Button
         val button5 = findViewById<View>(R.id.Button5) as Button
         val button6 = findViewById<View>(R.id.Button6) as Button
-        textChange1.text = "";
+        textChange1.text = "Ordne die richtigen Wörter zu";
         button1.text = "Rindfleisch"
         button2.text = "Schweinefleisch"
-        button3.text = "Lammfleisch"
-        button4.text = "Huhnfleisch"
+        button3.text = "Lamm"
+        button4.text = "Huhn"
         button5.text = "Fisch"
-        button6.text = "Hammelfleisch"
+        button6.text = "Lammfleisch"
     }
 
     fun appLanguagePortuguese(){
@@ -129,13 +129,13 @@ class B2LessonVocabulary1 : AppCompatActivity() {
         val button4 = findViewById<View>(R.id.Button4) as Button
         val button5 = findViewById<View>(R.id.Button5) as Button
         val button6 = findViewById<View>(R.id.Button6) as Button
-        textChange1.text = "";
-        button1.text = ""
-        button2.text = ""
-        button3.text = ""
-        button4.text = ""
-        button5.text = ""
-        button6.text = ""
+        textChange1.text = "Combine as palavras corretas";
+        button1.text = "Carne bovina"
+        button2.text = "Porco"
+        button3.text = "Cordeiro"
+        button4.text = "Frango"
+        button5.text = "Peixe"
+        button6.text = "Carneiro"
     }
 
 }
