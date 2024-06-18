@@ -45,9 +45,9 @@ class StartPage : AppCompatActivity() {
         startActivity(intent)
     }
 
-   /* fun continueButton(view: View?){
-        val intent = Intent(this, MainScreen::class.java)
+    fun continueButton(view: View?){
+        val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
-    }*/
+    }
     
 }
