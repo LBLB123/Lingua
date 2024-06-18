@@ -1,6 +1,6 @@
 package com.example.lingua.ui.settings
 
-import android.annotation.SuppressLint
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -18,11 +18,13 @@ class LanguagesFragment : Fragment() {
     private val languages = listOf("English", "German", "Portuguese")
     private val flags = listOf(R.drawable.gb_flag, R.drawable.german, R.drawable.portuguese)
 
-    private var currentLearningLanguage = languages[0]
-    private var currentLearningFlag = flags[0]
+    private lateinit var sharedPreferences: android.content.SharedPreferences
 
-    private var currentAppLanguage = languages[0]
-    private var currentAppFlag = flags[0]
+    private var currentLearningLanguage = "English"
+    private var currentLearningFlag = R.drawable.gb_flag
+
+    private var currentAppLanguage = "English"
+    private var currentAppFlag = R.drawable.gb_flag
 
     private lateinit var learningLanguageTextView: TextView
     private lateinit var learningLanguageFlagView: ImageView
@@ -34,6 +36,7 @@ class LanguagesFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_languages, container, false)
+        sharedPreferences = requireContext().getSharedPreferences("languagePrefs", Context.MODE_PRIVATE)
 
         learningLanguageTextView = view.findViewById(R.id.learning_language_text)
         learningLanguageFlagView = view.findViewById(R.id.learning_language_flag)
@@ -42,6 +45,11 @@ class LanguagesFragment : Fragment() {
 
         val appLanguageContainer = view.findViewById<LinearLayout>(R.id.app_language_container)
         val saveButton = view.findViewById<Button>(R.id.save_button)
+
+        currentLearningLanguage = sharedPreferences.getString("learningLanguage", "English") ?: "English"
+        currentAppLanguage = sharedPreferences.getString("appLanguage", "English") ?: "English"
+        currentLearningFlag = getFlagResourceId(currentLearningLanguage)
+        currentAppFlag = getFlagResourceId(currentAppLanguage)
 
         learningLanguageTextView.text = currentLearningLanguage
         learningLanguageFlagView.setImageResource(currentLearningFlag)
@@ -58,13 +66,13 @@ class LanguagesFragment : Fragment() {
         }
 
         saveButton.setOnClickListener {
+            saveSelectedLanguages()
             findNavController().popBackStack()
         }
 
         return view
     }
 
-    @SuppressLint("MissingInflatedId")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -84,6 +92,22 @@ class LanguagesFragment : Fragment() {
             }
 
             learningOptionsContainer.addView(itemView)
+        }
+    }
+
+    private fun saveSelectedLanguages() {
+        val editor = sharedPreferences.edit()
+        editor.putString("learningLanguage", currentLearningLanguage)
+        editor.putString("appLanguage", currentAppLanguage)
+        editor.apply()
+    }
+
+    private fun getFlagResourceId(language: String): Int {
+        return when (language) {
+            "English" -> R.drawable.gb_flag
+            "German" -> R.drawable.german
+            "Portuguese" -> R.drawable.portuguese
+            else -> R.drawable.gb_flag
         }
     }
 }

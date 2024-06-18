@@ -12,7 +12,7 @@
         android:id="@+id/study_plan_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart ="20dp"
+        android:layout_marginStart="20dp"
         style="@style/TextStyle.BodyLarge"
         android:text="@string/study_plan"
         android:textColor="@color/white"
@@ -43,7 +43,7 @@
         android:layout_height="45dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
-        android:text="@string/progress"
+        android:text="@string/to_do_list"
         android:textColor="@color/white"
         android:textSize="24sp" />
 
@@ -60,18 +60,18 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/exercises_completed"
+            android:text="@string/exercises"
             style="@style/TextStyle.BodyLarge"
             android:textColor="@color/white"
-            android:textSize="14sp"/>
+            android:textSize="20sp"/>
 
         <LinearLayout
-            android:id="@+id/progress_days_container"
+            android:id="@+id/todo_list_container"
+            style="@style/TextStyle.BodyLarge"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="190dp"
-            android:orientation="horizontal"
-            android:weightSum="7">
-        </LinearLayout>
+            android:layout_height="175dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" />
+
     </LinearLayout>
 </LinearLayout>

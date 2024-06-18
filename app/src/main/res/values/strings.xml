@@ -23,4 +23,7 @@
     <string name="current_learning_language">Current learning language</string>
     <string name="learning_language_flag">learning flag</string>
     <string name="title_languages">Languages</string>
+    <string name="exercises">Exercises</string>
+    <string name="to_do_list">To Do List</string>
+    <string name="select_language">Change App Language</string>
 </resources>

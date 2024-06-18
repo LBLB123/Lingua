@@ -7,7 +7,6 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
-import androidx.core.content.ContextCompat
 import com.example.lingua.R
 
 class LanguageSelectionDialog(
@@ -21,23 +20,23 @@ class LanguageSelectionDialog(
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.item_language_option)
+        setContentView(R.layout.dialog_language_selection)
 
-        val languageContainer = findViewById<LinearLayout>(R.id.app_language_container)
+        val languageOptionsContainer = findViewById<LinearLayout>(R.id.language_options_container)
 
-        languages.forEachIndexed { index, language ->
-            val itemView = layoutInflater.inflate(R.layout.item_language_option, languageContainer, false)
-            val languageTextView = itemView.findViewById<TextView>(R.id.language_option_text)
-            val languageFlagView = itemView.findViewById<ImageView>(R.id.language_option_flag)
-            languageTextView.text = language
-            languageFlagView.setImageDrawable(ContextCompat.getDrawable(context, flags[index]))
+        for ((index, language) in languages.withIndex()) {
+            val itemView = layoutInflater.inflate(R.layout.item_language_option, languageOptionsContainer, false)
+            val optionTextView = itemView.findViewById<TextView>(R.id.language_option_text)
+            val optionFlagView = itemView.findViewById<ImageView>(R.id.language_option_flag)
+            optionTextView.text = language
+            optionFlagView.setImageResource(flags[index])
 
             itemView.setOnClickListener {
                 onLanguageSelected(language, flags[index])
                 dismiss()
             }
 
-            languageContainer.addView(itemView)
+            languageOptionsContainer.addView(itemView)
         }
     }
 }
