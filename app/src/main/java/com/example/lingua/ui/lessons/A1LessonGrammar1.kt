@@ -44,7 +44,7 @@ class A1LessonGrammar1 : AppCompatActivity() {
         val button2 = findViewById<View>(R.id.Button2) as Button
         val button3 = findViewById<View>(R.id.Button3) as Button
         val button4 = findViewById<View>(R.id.Button4) as Button
-        textChange1.text = "Reading Lesson";
+        textChange1.text = "Grammar Lesson";
         textChange2.text = "I wake up at 8am every day.";
         textChange3.text = "How would you write this sentence in simple past tense?";
         button1.text = "I will wake up at 8am every day."
@@ -61,7 +61,7 @@ class A1LessonGrammar1 : AppCompatActivity() {
         val button2 = findViewById<View>(R.id.Button2) as Button
         val button3 = findViewById<View>(R.id.Button3) as Button
         val button4 = findViewById<View>(R.id.Button4) as Button
-        textChange1.text = "Leselektion";
+        textChange1.text = "Grammatik Lektion";
         textChange2.text = "Ich wache jeden Tag um 8 Uhr auf.";
         textChange3.text = "Wie würdest du diesen Satz im Präteritum schreiben?";
         button1.text = "Ich werde jeden Tag um 8 Uhr aufwachen."
@@ -79,7 +79,7 @@ class A1LessonGrammar1 : AppCompatActivity() {
         val button2 = findViewById<View>(R.id.Button2) as Button
         val button3 = findViewById<View>(R.id.Button3) as Button
         val button4 = findViewById<View>(R.id.Button4) as Button
-        textChange1.text = "Lição de Leitura";
+        textChange1.text = "Lição de Gramática";
         textChange2.text = "Eu acordo às 8h todos os dias.";
         textChange3.text = "Como você escreveria esta frase no passado simples?";
         button1.text = "Eu vou acordar às 8h todos os dias."

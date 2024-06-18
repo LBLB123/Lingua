@@ -22,9 +22,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AnswerControl">
-        </activity>
-        <activity
             android:name=".CorrectAnswer">
         </activity>
         <activity

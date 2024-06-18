@@ -1,4 +1,4 @@
-package lessons
+package com.example.lingua.ui.lessons
 
 import android.content.Intent
 import android.graphics.Color
@@ -26,7 +26,7 @@ class B2LessonVocabulary1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.b2_lesson_vocabluary1)
+        setContentView(R.layout.b2_lesson_vocabulary1)
         class3.retry = 12
         class4.retry = 12
         learningLanguageChoice();

@@ -19,8 +19,8 @@ import com.example.lingua.ui.lessons.B1LessonGrammar1
 import com.example.lingua.ui.lessons.B1LessonReading1
 import com.example.lingua.ui.lessons.B2LessonGrammar1
 import com.example.lingua.ui.lessons.B2LessonReading1
-import lessons.B1LessonVocabulary1
-import lessons.B2LessonVocabulary1
+import com.example.lingua.ui.lessons.B2LessonVocabulary1
+import com.example.lingua.ui.lessons.B1LessonVocabulary1
 
 
 class MyButtonAdapter(private val lessonList: List<Lesson>) : RecyclerView.Adapter<MyButtonAdapter.MyViewHolder>() {

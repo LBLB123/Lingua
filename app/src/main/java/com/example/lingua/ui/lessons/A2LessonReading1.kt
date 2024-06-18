@@ -52,7 +52,7 @@ class A2LessonReading1 : AppCompatActivity() {
     }
 
     fun germanText(){
-        val textChange1 = findViewById<TextView>(R.id.GrammarLesson)
+        val textChange1 = findViewById<TextView>(R.id.ReadingLesson)
         val textChange2 = findViewById<TextView>(R.id.Sentence)
         val button1 = findViewById<View>(R.id.Button1) as Button
         val button2 = findViewById<View>(R.id.Button2) as Button
@@ -67,7 +67,7 @@ class A2LessonReading1 : AppCompatActivity() {
     }
 
     fun portugueseText(){
-        val textChange1 = findViewById<TextView>(R.id.GrammarLesson)
+        val textChange1 = findViewById<TextView>(R.id.ReadingLesson)
         val textChange2 = findViewById<TextView>(R.id.Sentence)
         val button1 = findViewById<View>(R.id.Button1) as Button
         val button2 = findViewById<View>(R.id.Button2) as Button

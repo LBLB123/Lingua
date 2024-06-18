@@ -7,27 +7,16 @@
     android:background="#2C3333"
     android:onClick="settings">
 
-    <ImageView
-        android:id="@+id/Settings"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:onClick="settings"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/settings" />
-
     <TextView
         android:id="@+id/Lingua"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="128dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="128dp"
         android:fontFamily="@font/space_grotesk_bold"
         android:text="Lingua"
         android:textColor="@color/white"
-        android:textSize="32sp"
+        android:textSize="50sp"
         app:layout_constraintBottom_toTopOf="@+id/Motto"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -35,8 +24,8 @@
         android:id="@+id/Motto"
         android:layout_width="281dp"
         android:layout_height="82dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginBottom="169dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="152dp"
         android:fontFamily="@font/space_grotesk_bold"
         android:text="Simple app for verifying your language knowledge in\n3 different langauges!"
         android:textColor="@color/white"
@@ -48,8 +37,8 @@
         android:id="@+id/Continue"
         android:layout_width="293dp"
         android:layout_height="48dp"
-        android:layout_marginEnd="33dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="120dp"
         android:background="@drawable/button_corners2"
         android:backgroundTint="#3B8681"
         android:fontFamily="@font/space_grotesk_bold"

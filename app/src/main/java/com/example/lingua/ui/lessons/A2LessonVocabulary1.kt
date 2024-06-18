@@ -26,7 +26,7 @@ class A2LessonVocabulary1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.a2_lesson_vocabluary1)
+        setContentView(R.layout.a2_lesson_vocabulary1)
         class3.retry = 6
         class4.retry = 6
         learningLanguageChoice();

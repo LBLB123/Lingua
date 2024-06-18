@@ -16,10 +16,11 @@ import com.example.lingua.ui.lessons.A2LessonReading1
 import com.example.lingua.ui.lessons.A2LessonVocabulary1
 import com.example.lingua.ui.lessons.B1LessonGrammar1
 import com.example.lingua.ui.lessons.B1LessonReading1
+import com.example.lingua.ui.lessons.B1LessonVocabulary1
 import com.example.lingua.ui.lessons.B2LessonGrammar1
 import com.example.lingua.ui.lessons.B2LessonReading1
-import lessons.B1LessonVocabulary1
-import lessons.B2LessonVocabulary1
+import com.example.lingua.ui.lessons.B2LessonVocabulary1
+
 
 class CorrectAnswer : AppCompatActivity() {
 
@@ -64,9 +65,9 @@ class CorrectAnswer : AppCompatActivity() {
         val textChange = findViewById<TextView>(R.id.Text)
         val button1 = findViewById<View>(R.id.Retry) as Button
         val button2 = findViewById<View>(R.id.Exit) as Button
-        textChange.text = "Your answer is wrong!";
-        button1.text = "Retry"
-        button2.text = "Exit"
+        textChange.text = "Sua resposta está correta!"
+        button1.text = "Tentar novamente"
+        button2.text = "Sair"
     }
 
     fun chooseActivity(view: View){

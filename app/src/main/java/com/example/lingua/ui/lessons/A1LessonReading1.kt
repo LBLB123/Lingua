@@ -44,7 +44,7 @@ class A1LessonReading1 : AppCompatActivity() {
         val button2 = findViewById<View>(R.id.Button2) as Button
         val button3 = findViewById<View>(R.id.Button3) as Button
         val button4 = findViewById<View>(R.id.Button4) as Button
-        textChange1.text = "Grammar Lesson";
+        textChange1.text = "ReadingLesson";
         textChange2.text = "How would you answer?";
         textChange3.text = "Someone asks you how old you are.";
         button1.text = "I'm ..."
@@ -61,7 +61,7 @@ class A1LessonReading1 : AppCompatActivity() {
         val button2 = findViewById<View>(R.id.Button2) as Button
         val button3 = findViewById<View>(R.id.Button3) as Button
         val button4 = findViewById<View>(R.id.Button4) as Button
-        textChange1.text = "Grammatik Lektion";
+        textChange1.text = "Leselektion";
         textChange2.text = "Wie würdest du antworten?";
         textChange3.text = "Jemand fragt dich, wie alt du bist.";
         button1.text = "Ich bin ..."
@@ -78,7 +78,7 @@ class A1LessonReading1 : AppCompatActivity() {
         val button2 = findViewById<View>(R.id.Button2) as Button
         val button3 = findViewById<View>(R.id.Button3) as Button
         val button4 = findViewById<View>(R.id.Button4) as Button
-        textChange1.text = "Lição de Gramática";
+        textChange1.text = "Licao De Leitura";
         textChange2.text = "Como você responderia?";
         textChange3.text = "Alguém pergunta quantos anos você tem.";
         button1.text = "Eu tenho ..."

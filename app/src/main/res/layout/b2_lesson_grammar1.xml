@@ -7,11 +7,24 @@
     android:background="#2C3333">
 
     <TextView
+        android:id="@+id/Sentence2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:text="How would you write this sentence in\npresent perfect continious tense?"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sentence1" />
+
+    <TextView
         android:id="@+id/GrammarLesson"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="41dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="192dp"
         android:fontFamily="@font/space_grotesk_bold"
         android:text="Grammar Lesson"
         android:textColor="#FFFFFF"
@@ -23,8 +36,8 @@
         android:id="@+id/Sentence1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="92dp"
-        android:layout_marginTop="37dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="@font/space_grotesk_bold"
         android:text="You worked yesterday."
         android:textColor="#FFFFFF"
@@ -32,25 +45,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/GrammarLesson" />
 
-    <TextView
-        android:id="@+id/Sentence2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="45dp"
-        android:fontFamily="@font/space_grotesk_bold"
-        android:text="How would you write this sentence in\npresent perfect continious tense?"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Sentence1" />
-
     <Button
         android:id="@+id/Button1"
-        android:layout_width="310dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginBottom="42dp"
+        android:layout_width="367dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="24dp"
         android:background="@drawable/button_corners1"
         android:backgroundTint="#17DBCF"
         android:fontFamily="@font/space_grotesk_bold"
@@ -65,10 +65,10 @@
 
     <Button
         android:id="@+id/Button2"
-        android:layout_width="310dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginBottom="45dp"
+        android:layout_width="367dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/button_corners1"
         android:backgroundTint="#17DBCF"
         android:fontFamily="@font/space_grotesk_bold"
@@ -83,10 +83,10 @@
 
     <Button
         android:id="@+id/Button3"
-        android:layout_width="310dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginBottom="44dp"
+        android:layout_width="367dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="24dp"
         android:background="@drawable/button_corners1"
         android:backgroundTint="#17DBCF"
         android:fontFamily="@font/space_grotesk_bold"
@@ -101,10 +101,10 @@
 
     <Button
         android:id="@+id/Button4"
-        android:layout_width="310dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginBottom="52dp"
+        android:layout_width="367dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="64dp"
         android:background="@drawable/button_corners1"
         android:backgroundTint="#17DBCF"
         android:fontFamily="@font/space_grotesk_bold"

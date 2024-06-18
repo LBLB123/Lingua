@@ -8,11 +8,24 @@
 
 
     <TextView
+        android:id="@+id/Sentence2"
+        android:layout_width="373dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:text="How would you answer?"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ReadingLesson" />
+
+    <TextView
         android:id="@+id/ReadingLesson"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="104dp"
-        android:layout_marginTop="39dp"
+        android:layout_marginTop="148dp"
         android:fontFamily="@font/space_grotesk_bold"
         android:text="@string/ReadingLesson"
         android:textColor="#FFFFFF"
@@ -25,25 +38,14 @@
         android:layout_width="285dp"
         android:layout_height="27dp"
         android:layout_margin="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/space_grotesk_bold"
         android:text="Someone asks you how old you are."
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Sentence2" />
-
-    <TextView
-        android:id="@+id/Sentence2"
-        android:layout_width="373dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="40dp"
-        android:fontFamily="@font/space_grotesk_bold"
-        android:text="How would you answer?"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ReadingLesson" />
 
     <Button
         android:id="@+id/Button1"

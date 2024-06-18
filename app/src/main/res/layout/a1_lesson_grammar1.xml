@@ -6,12 +6,32 @@
     android:layout_height="match_parent"
     android:background="#2C3333">
 
+    <Button
+        android:id="@+id/Button3"
+        android:layout_width="367dp"
+        android:layout_height="66dp"
+
+        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_corners1"
+        android:backgroundTint="#17DBCF"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:onClick="correctAnswer"
+        android:text="I woke up at 8am every day."
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Button2"
+        app:rippleColor="#17DBCF" />
+
     <TextView
         android:id="@+id/GrammarLesson"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="104dp"
         android:fontFamily="@font/space_grotesk_bold"
         android:text="@string/GrammarLesson"
         android:textColor="#FFFFFF"
@@ -23,8 +43,8 @@
         android:id="@+id/Sentence1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="73dp"
-        android:layout_marginTop="38dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="36dp"
         android:fontFamily="@font/space_grotesk_bold"
         android:text="@string/i_wake_up_at_8am_every_day"
         android:textColor="#FFFFFF"
@@ -36,8 +56,8 @@
         android:id="@+id/Sentence2"
         android:layout_width="358dp"
         android:layout_height="59dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
         android:fontFamily="@font/space_grotesk_bold"
         android:text="How would you write this sentence in\nsimple past tense?"
         android:textColor="#FFFFFF"
@@ -51,6 +71,8 @@
         android:layout_height="66dp"
 
         android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
         android:background="@drawable/button_corners1"
         android:backgroundTint="#17DBCF"
         android:fontFamily="@font/space_grotesk_bold"
@@ -69,6 +91,8 @@
         android:layout_height="66dp"
 
         android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/button_corners1"
         android:backgroundTint="#17DBCF"
         android:fontFamily="@font/space_grotesk_bold"
@@ -82,29 +106,13 @@
         app:rippleColor="#17DBCF" />
 
     <Button
-        android:id="@+id/Button3"
-        android:layout_width="367dp"
-        android:layout_height="66dp"
-
-        android:layout_margin="20dp"
-        android:background="@drawable/button_corners1"
-        android:backgroundTint="#17DBCF"
-        android:fontFamily="@font/space_grotesk_bold"
-        android:onClick="correctAnswer"
-        android:text="I woke up at 8am every day."
-        android:textAllCaps="false"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Button2"
-        app:rippleColor="#17DBCF" />
-
-    <Button
         android:id="@+id/Button4"
         android:layout_width="367dp"
         android:layout_height="66dp"
 
         android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/button_corners1"
         android:backgroundTint="#17DBCF"
         android:fontFamily="@font/space_grotesk_bold"
