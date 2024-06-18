@@ -44,7 +44,7 @@ class A2LessonGrammar1 : AppCompatActivity() {
         val button3 = findViewById<View>(R.id.Button3) as Button
         val button4 = findViewById<View>(R.id.Button4) as Button
         textChange1.text = "Grammar Lesson";
-        textChange2.text = "What is the superlativ of adverb\\nimportant?";
+        textChange2.text = "What is the superlativ of adverb important?";
         button1.text = "Important"
         button2.text = "Importantest"
         button3.text = "The Most Important"
@@ -59,7 +59,7 @@ class A2LessonGrammar1 : AppCompatActivity() {
         val button3 = findViewById<View>(R.id.Button3) as Button
         val button4 = findViewById<View>(R.id.Button4) as Button
         textChange1.text = "Grammatik Lektion";
-        textChange2.text = "Was ist der Superlativ des Adverbs\\nwichtig?";
+        textChange2.text = "Was ist der Superlativ des Adverbs wichtig?";
         button1.text = "Wichtig"
         button2.text = "Wichtigst"
         button3.text = "Am wichtigsten"
@@ -74,7 +74,7 @@ class A2LessonGrammar1 : AppCompatActivity() {
         val button3 = findViewById<View>(R.id.Button3) as Button
         val button4 = findViewById<View>(R.id.Button4) as Button
         textChange1.text = "Lição de Gramática";
-        textChange2.text = "Qual é o superlativo do advérbio\\nimportante?";
+        textChange2.text = "Qual é o superlativo do advérbio importante?";
         button1.text = "Importante"
         button2.text = "Mais Importante"
         button3.text = "O Mais Importante"

@@ -46,7 +46,7 @@ class B1LessonGrammar1 : AppCompatActivity() {
         val button4 = findViewById<View>(R.id.Button4) as Button
         textChange1.text = "@string/GrammarLesson";
         textChange2.text = "I have a headache";
-        textChange3.text = "How would you write this sentence in\\npast continius tense?";
+        textChange3.text = "How would you write this sentence in past continius tense?";
         button1.text = "I had a headache"
         button2.text = "I was having a heading."
         button3.text = "I'm having a headache."
@@ -63,7 +63,7 @@ class B1LessonGrammar1 : AppCompatActivity() {
         val button4 = findViewById<View>(R.id.Button4) as Button
         textChange1.text = "@string/GrammatikLektion";
         textChange2.text = "Ich habe Kopfschmerzen";
-        textChange3.text = "Wie würdest du diesen Satz im\\nVerlaufsform der Vergangenheit schreiben?";
+        textChange3.text = "Wie würdest du diesen Satz im Verlaufsform der Vergangenheit schreiben?";
         button1.text = "Ich hatte Kopfschmerzen"
         button2.text = "Ich hatte Kopfschmerzen."
         button3.text = "Ich habe Kopfschmerzen."
@@ -80,7 +80,7 @@ class B1LessonGrammar1 : AppCompatActivity() {
         val button4 = findViewById<View>(R.id.Button4) as Button
         textChange1.text = "@string/LicaoDeGramatica";
         textChange2.text = "Estou com dor de cabeça";
-        textChange3.text = "Como você escreveria esta frase no\\npassado contínuo?";
+        textChange3.text = "Como você escreveria esta frase no passado contínuo?";
         button1.text = "Eu estava com dor de cabeça"
         button2.text = "Eu estava com dor de cabeça."
         button3.text = "Estou com dor de cabeça."

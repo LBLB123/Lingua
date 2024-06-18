@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 class AppLanguage : AppCompatActivity() {
 
-    private var appLang : Char = 'E'
+    private var appLang: Char = 'E'
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -16,25 +16,31 @@ class AppLanguage : AppCompatActivity() {
         setContentView(R.layout.app_langauge)
     }
 
-    fun getAppLang(): Char{
+    fun getAppLang(): Char {
         return appLang
     }
 
-    fun englishLanguage(view: View?){
+    fun englishLanguage(view: View?) {
         appLang = 'E'
+
+        println("Language set to English")
     }
 
-    fun germanLanguage(view: View?){
+    fun germanLanguage(view: View?) {
         appLang = 'G'
+
+        println("Language set to German")
     }
 
-    fun portugueseLanguage(view: View?){
+    fun portugueseLanguage(view: View?) {
         appLang = 'P'
+
+        println("Language set to Portuguese")
     }
 
-    fun continueButton(view: View?){
+    fun continueButton(view: View?) {
         val intent = Intent(this, LearningLanguage::class.java)
+        intent.putExtra("APP_LANG", appLang)
         startActivity(intent)
     }
-
 }

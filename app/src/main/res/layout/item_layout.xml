@@ -10,10 +10,10 @@
 
     <Button
         android:id="@+id/itemButton"
-        android:layout_width="117dp"
-        android:layout_height="75dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="167dp"
+        android:layout_height="118dp"
         android:gravity="center"
-        android:textColor="@android:color/black"
-        android:textSize="16sp"
-        style="?android:attr/borderlessButtonStyle"/>
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
 </LinearLayout>

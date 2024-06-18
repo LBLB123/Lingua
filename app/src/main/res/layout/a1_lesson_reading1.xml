@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="#2C3333">
 
+
     <TextView
         android:id="@+id/ReadingLesson"
         android:layout_width="wrap_content"
@@ -23,8 +24,7 @@
         android:id="@+id/Sentence1"
         android:layout_width="285dp"
         android:layout_height="27dp"
-        android:layout_marginStart="38dp"
-        android:layout_marginTop="46dp"
+        android:layout_margin="40dp"
         android:fontFamily="@font/space_grotesk_bold"
         android:text="Someone asks you how old you are."
         android:textColor="#FFFFFF"
@@ -34,10 +34,10 @@
 
     <TextView
         android:id="@+id/Sentence2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="89dp"
-        android:layout_marginTop="45dp"
+        android:layout_width="373dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="@font/space_grotesk_bold"
         android:text="How would you answer?"
         android:textColor="#FFFFFF"
@@ -47,10 +47,12 @@
 
     <Button
         android:id="@+id/Button1"
-        android:layout_width="310dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginBottom="50dp"
+        android:layout_width="367dp"
+        android:layout_height="66dp"
+
+        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="28dp"
         android:background="@drawable/button_corners1"
         android:backgroundTint="#17DBCF"
         android:fontFamily="@font/space_grotesk_bold"
@@ -65,10 +67,12 @@
 
     <Button
         android:id="@+id/Button2"
-        android:layout_width="310dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginBottom="40dp"
+        android:layout_width="367dp"
+        android:layout_height="66dp"
+
+        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="24dp"
         android:background="@drawable/button_corners1"
         android:backgroundTint="#17DBCF"
         android:fontFamily="@font/space_grotesk_bold"
@@ -82,29 +86,13 @@
         app:rippleColor="#17DBCF" />
 
     <Button
-        android:id="@+id/Button3"
-        android:layout_width="310dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginBottom="48dp"
-        android:background="@drawable/button_corners1"
-        android:backgroundTint="#17DBCF"
-        android:fontFamily="@font/space_grotesk_bold"
-        android:onClick="wrongAnswer"
-        android:text="I am ... years old."
-        android:textAllCaps="false"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/Button4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:rippleColor="#17DBCF" />
-
-    <Button
         android:id="@+id/Button4"
-        android:layout_width="310dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginBottom="52dp"
+        android:layout_width="367dp"
+        android:layout_height="66dp"
+
+        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="240dp"
         android:background="@drawable/button_corners1"
         android:backgroundTint="#17DBCF"
         android:fontFamily="@font/space_grotesk_bold"
@@ -114,6 +102,26 @@
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#17DBCF" />
+
+    <Button
+        android:id="@+id/Button3"
+        android:layout_width="367dp"
+        android:layout_height="66dp"
+
+        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_corners1"
+        android:backgroundTint="#17DBCF"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:onClick="wrongAnswer"
+        android:text="I am ... years old."
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/Button4"
         app:layout_constraintStart_toStartOf="parent"
         app:rippleColor="#17DBCF" />
 

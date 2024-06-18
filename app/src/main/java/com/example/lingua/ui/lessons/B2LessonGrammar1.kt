@@ -46,7 +46,7 @@ class B2LessonGrammar1 : AppCompatActivity() {
         val button4 = findViewById<View>(R.id.Button4) as Button
         textChange1.text = "@string/GrammarLesson";
         textChange2.text = "You worked yesterday.";
-        textChange3.text = "How would you write this sentence in\\npresent perfect continious tense?";
+        textChange3.text = "How would you write this sentence in present perfect continious tense?";
         button1.text = "You work yesterday."
         button2.text = "You are working yesterday."
         button3.text = "You have been working yesteday."
@@ -63,7 +63,7 @@ class B2LessonGrammar1 : AppCompatActivity() {
         val button4 = findViewById<View>(R.id.Button4) as Button
         textChange1.text = "@string/GrammatikLektion";
         textChange2.text = "Du hast gestern gearbeitet.";
-        textChange3.text = "Wie würdest du diesen Satz im\\nPräsens Perfekt Verlaufsform schreiben?";
+        textChange3.text = "Wie würdest du diesen Satz im Präsens Perfekt Verlaufsform schreiben?";
         button1.text = "Du arbeitest gestern."
         button2.text = "Du hast gestern gearbeitet."
         button3.text = "Du hast gestern gearbeitet."
@@ -80,7 +80,7 @@ class B2LessonGrammar1 : AppCompatActivity() {
         val button4 = findViewById<View>(R.id.Button4) as Button
         textChange1.text = "@string/LicaoDeGramatica";
         textChange2.text = "Você trabalhou ontem.";
-        textChange3.text = "Como você escreveria esta frase no\\npresente perfeito contínuo?";
+        textChange3.text = "Como você escreveria esta frase no presente perfeito contínuo?";
         button1.text = "Você trabalha ontem."
         button2.text = "Você está trabalhando ontem."
         button3.text = "Você tem estado trabalhando ontem."

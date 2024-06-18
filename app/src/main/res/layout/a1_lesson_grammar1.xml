@@ -34,8 +34,8 @@
 
     <TextView
         android:id="@+id/Sentence2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="358dp"
+        android:layout_height="59dp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="52dp"
         android:fontFamily="@font/space_grotesk_bold"
@@ -47,10 +47,10 @@
 
     <Button
         android:id="@+id/Button1"
-        android:layout_width="310dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="42dp"
+        android:layout_width="367dp"
+        android:layout_height="66dp"
+
+        android:layout_margin="20dp"
         android:background="@drawable/button_corners1"
         android:backgroundTint="#17DBCF"
         android:fontFamily="@font/space_grotesk_bold"
@@ -65,10 +65,10 @@
 
     <Button
         android:id="@+id/Button2"
-        android:layout_width="310dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="42dp"
+        android:layout_width="367dp"
+        android:layout_height="66dp"
+
+        android:layout_margin="20dp"
         android:background="@drawable/button_corners1"
         android:backgroundTint="#17DBCF"
         android:fontFamily="@font/space_grotesk_bold"
@@ -83,10 +83,10 @@
 
     <Button
         android:id="@+id/Button3"
-        android:layout_width="310dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="45dp"
+        android:layout_width="367dp"
+        android:layout_height="66dp"
+
+        android:layout_margin="20dp"
         android:background="@drawable/button_corners1"
         android:backgroundTint="#17DBCF"
         android:fontFamily="@font/space_grotesk_bold"
@@ -101,10 +101,10 @@
 
     <Button
         android:id="@+id/Button4"
-        android:layout_width="310dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="44dp"
+        android:layout_width="367dp"
+        android:layout_height="66dp"
+
+        android:layout_margin="20dp"
         android:background="@drawable/button_corners1"
         android:backgroundTint="#17DBCF"
         android:fontFamily="@font/space_grotesk_bold"

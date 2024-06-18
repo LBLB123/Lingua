@@ -10,7 +10,7 @@ import androidx.core.view.WindowInsetsCompat
 
 class LearningLanguage : AppCompatActivity() {
 
-    private var learningLang: Char = 'E'
+    private var learningLang: Char = 'P'
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
